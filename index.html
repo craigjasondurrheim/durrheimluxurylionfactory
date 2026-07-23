@@ -1,0 +1,99 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durrheim Luxury Lion Factory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <header>
+        <div class="logo">DURRHEIM LUXURY LION FACTORY</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Durrheim Luxury Lion Factory</h1>
+    </section>
+   
+    <!-- Updated Gallery Section with Click Events -->
+    <section id="gallery" class="gallery">
+        <h2>The Collection</h2>
+        <div class="grid">
+            <div class="card" onclick="openLightbox('images/lion_1.jpg', 'Lion No. 0001 The Genesis')">
+                <img src="images/lion_1.jpg" alt="Luxury Lion Artwork 1" class="gallery-img">
+                <div class="card-content">
+                    <h3>Lion No. 0001 The Genesis</h3>
+                           <p class="status-text">Not Available For Purchase </p> 
+                           <p class="status-text">Part Of The Lion Vault</p> 
+                </div>
+                           
+                        
+            </div>
+        
+            <div class="card" onclick="openLightbox('images/lion_2.jpg', 'Lion No. 0002 The First Available Purchase')">
+                <img src="images/lion_2.jpg" alt="Luxury Lion Artwork 2" class="gallery-img">
+                <div class="card-content">
+                    <h3>Lion No. 0002 The First Available Purchase</h3>
+                       <p class="status-text">Available For Purchase </p> 
+                           <p class="status-text">Contact: craigjdurrheim@gmail.com</p> 
+                </div>
+            </div>
+            <div class="card" onclick="openLightbox('images/lion_3.jpg', 'Lion No. 0003 The Magic Number')">
+                <img src="images/lion_3.jpg" alt="Luxury Lion Artwork 3" class="gallery-img">
+                <div class="card-content">
+                    <h3>Lion No. 0003 The Magic Number</h3>
+                          <p class="status-text">Available For Purchase </p> 
+                           <p class="status-text">Contact: craigjdurrheim@gmail.com</p>
+                </div>
+            </div>
+            <div class="card" onclick="openLightbox('images/lion_4.jpg', 'Lion No. 0004 Luxury')">
+                <img src="images/lion_4.jpg" alt="Luxury Lion Artwork 3" class="gallery-img">
+                <div class="card-content">
+                    <h3>Lion No. 0004 Luxury</h3>
+                          <p class="status-text">Available For Purchase </p> 
+                           <p class="status-text">Contact: craigjdurrheim@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full-Screen Lightbox Modal (Place right above </body>) -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-btn">&times;</span>
+        <img id="lightbox-img" class="lightbox-content" src="" alt="">
+        <div id="lightbox-caption"></div>
+    </div>
+
+ 
+    <!-- JavaScript for Dynamic Lightbox Logic -->
+    <script>
+        function openLightbox(imagePath, titleText) {
+            // Find the elements on the page
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const caption = document.getElementById('lightbox-caption');
+            
+            // Swap out the old content for the current selection
+            lightboxImg.src = imagePath;
+            lightboxImg.alt = titleText;
+            caption.innerText = titleText;
+            
+            // Smoothly reveal the overlay
+            lightbox.classList.add('active');
+        }
+
+        function closeLightbox() {
+            // Hide the overlay
+            document.getElementById('lightbox').classList.remove('active');
+        }
+    </script>
+
+    </body>
+    </html>
+
