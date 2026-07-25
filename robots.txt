@@ -1,4 +1,15 @@
 User-agent: *
 Disallow: 
 
+# Explicitly welcome Search Engine & AI Answer Engine Bots
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: PerplexityBot
+User-agent: Applebot
+Allow: /
+
+# Declare your XML Sitemap structure
 Sitemap: https://durrheimluxurylionfactory.com
