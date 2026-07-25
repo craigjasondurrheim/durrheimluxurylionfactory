@@ -4,6 +4,10 @@
     <loc>https://durrheimluxurylionfactory.com</loc>
     <priority>1.00</priority>
   </url>
+   <url>
+    <loc>https://durrheimluxurylionfactory.com/factory-logs</loc>
+    <priority>0.80</priority>
+  </url>
   <url>
     <loc>https://durrheimluxurylionfactory.com/about</loc>
     <priority>0.80</priority>
@@ -11,5 +15,10 @@
   <url>
     <loc>https://durrheimluxurylionfactory.com/contact</loc>
     <priority>0.80</priority>
+  </url>
+  <!-- Individual Lion Log Entries -->
+  <url>
+    <loc>https://durrheimluxurylionfactory.com/factory-logs/lion-5-logs.html</loc>
+    <priority>0.64</priority>
   </url>
 </urlset>
