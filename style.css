@@ -470,3 +470,43 @@ footer {
 .dark-form .submit-btn:active {
   transform: scale(0.98);
 }
+
+/* Styling for the new premium button */
+.luxury-inquiry-btn {
+    display: block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #111111; /* Clean upscale dark theme */
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1px solid #111111;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Elegant transition effect when hovering over the button */
+.luxury-inquiry-btn:hover {
+    background-color: transparent;
+    color: #111111 !important;
+}
+
+/* Subtle luxury styling tweaks for status updates */
+.target-available {
+    color: #c5a880 !important; /* Gold accent color for available items */
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.target-unavailable {
+    color: #888888 !important; /* Muted gray for unavailable vault items */
+}
+
+.note-text {
+    font-style: italic;
+    font-size: 0.85rem;
+    color: #666666;
+}
