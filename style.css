@@ -40,15 +40,18 @@ nav a:hover {
 }
 
 .hero {
-    text-align: center;
+    background-color: #0b0b0b; /* Deep luxury charcoal black background */
     padding: 100px 20px;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('hero-bg.jpg') center/cover;
+    text-align: center;
 }
 
 .hero h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;          /* Makes the headline grand and imposing */
+    font-weight: 400;           /* Clean, thin weight looks more premium than heavy bold */
+    color: #f5f5f7;             /* Off-white color reduces harsh glare */
+    letter-spacing: 2px;        /* Adds breathing room between the letters */
+    text-transform: capitalize; 
 }
 
 .hero p {
